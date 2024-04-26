@@ -47,7 +47,7 @@ class UserAuth: ObservableObject {
         }
         
         // Create login request
-        let request = OIDAuthorizationRequest(configuration: config!, clientId: appSettings.authCredentials.clientId, clientSecret: nil, scopes: ["openid", "profile", "offline_access"],
+        let request = OIDAuthorizationRequest(configuration: config!, clientId: appSettings.authCredentials.clientId, clientSecret: nil, scopes: ["openid", "profile", "email", "offline_access"],
                                         redirectURL: redirectURI, responseType: OIDResponseTypeCode, additionalParameters: nil)
         // performs authentication request
         appDelegate.currentAuthorizationFlow = OIDAuthState.authState(byPresenting: request, presenting: presentingView!) { (authState, error) in
