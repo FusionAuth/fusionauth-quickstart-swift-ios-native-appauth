@@ -95,11 +95,12 @@ class UserAuth: ObservableObject {
             return
         }
         do {
-            let authState = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? OIDAuthState
+            let authState = try NSKeyedUnarchiver.unarchivedObject(ofClasses: [OIDAuthState.self], from: data) as? OIDAuthState
             self.setAuthState(state: authState)
             // Fetch user info if user authenticated
             fetchUserInfo()
        } catch {
+           self.setAuthState(state: nil)
            print(error)
        }
    }
