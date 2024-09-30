@@ -43,4 +43,4 @@ You can log into the [FusionAuth admin UI](http://localhost:9011/admin) and look
 
 ### Further Information
 
-Visit https://fusionauth.io/docs/quickstarts/quickstart-ios-swift-native for a step-by-step guide on how to build this iOS app from scratch, including more details about the tenant and application settings.
+Visit [https://fusionauth.io/docs/quickstarts/quickstart-swift-ios-native](https://fusionauth.io/docs/quickstarts/quickstart-swift-ios-native) for a step-by-step guide on how to build this iOS app from scratch, including more details about the tenant and application settings.
